@@ -1,0 +1,34 @@
+.card {
+  width: 70%;
+  height: auto;
+  margin: 2rem auto;
+  padding: 1rem 1rem 1.5rem;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  box-shadow: $all-shadow;
+  border-radius: 1rem;
+}
+.--correct {
+  animation: correct-transition 1s forwards;
+}
+.--wrong {
+  animation: wrong-transition 1s forwards;
+}
+
+/* SMALL SCREEN */
+@media all and (max-width: $breakpoint-small-screen) {
+  .card {
+    width: 90%;
+  }
+}
+
+/* MOBILE */
+@media all and (max-width: $breakpoint-mobile) {
+  .card {
+    width: 100%;
+    padding: 1rem 0.2rem;
+  }
+}

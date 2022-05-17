@@ -1,0 +1,40 @@
+// Colors
+$background-prim: rgb(247, 247, 247);
+$background-secondary: linear-gradient(
+  90deg,
+  rgba(76, 110, 158, 1) 0%,
+  rgba(123, 218, 212, 1) 100%
+);
+
+$color-primary: #407bae;
+$color-secondary: #84268f;
+
+$color-danger: rgba(243, 76, 76, 0.451);
+$color-success: rgba(88, 225, 88, 0.451);
+$color-edit: #63b2e0;
+
+// Shadows
+$regular-shadow: #00000029 3px 3px 6px;
+$all-shadow: #00000029 1px 6px 6px;
+
+// Radius
+$regular-radius: 2%;
+
+// Breakpoints
+$breakpoint-large-screen: 1401px;
+$breakpoint-small-screen: 1400px;
+$breakpoint-mobile: 800px;
+$breakpoint-small-mobile: 400px;
+
+// Margin & Padding
+@mixin margin-between-blocks() {
+  @media all and (min-width: $breakpoint-large-screen) {
+    margin-top: 1rem;
+  }
+  @media all and (max-width: $breakpoint-small-screen) {
+    margin-top: 1rem;
+  }
+  @media all and (max-width: $breakpoint-mobile) {
+    margin-top: 0.5rem;
+  }
+}

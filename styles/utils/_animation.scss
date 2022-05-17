@@ -1,0 +1,62 @@
+@keyframes correct-transition {
+  from {
+    background-color: $color-success;
+  }
+  to {
+    background-color: white;
+  }
+}
+@keyframes wrong-transition {
+  from {
+    background-color: $color-danger;
+  }
+  to {
+    background-color: white;
+  }
+}
+
+@keyframes gradient-color {
+  0% {
+    background: $color-primary;
+  }
+  100% {
+    background: rgba(123, 218, 212, 1) 100%;
+  }
+}
+
+@keyframes shake {
+  0% {
+    transform: translateX(0px);
+    color: rgba($color-primary, 0.8);
+  }
+  20% {
+    transform: translateX(-5px);
+    color: rgba($color-primary, 0.6);
+  }
+  40% {
+    transform: translateX(5px);
+    color: rgba($color-primary, 0.4);
+  }
+  60% {
+    transform: translateX(-5px);
+    color: rgba($color-primary, 0.6);
+  }
+  80% {
+    transform: translateX(5px);
+    color: rgba($color-primary, 0.8);
+  }
+  100% {
+    transform: translateX(0px);
+    color: rgba($color-primary, 1);
+  }
+}
+
+@keyframes reverse-opacity {
+  0% {
+    opacity: 1;
+  }
+
+  100% {
+    opacity: 0;
+  }
+}

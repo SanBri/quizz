@@ -1,0 +1,14 @@
+.alert {
+  width: 30rem;
+  padding: 0.8rem;
+  margin: 1rem auto;
+  font-family: "Futura-Bold";
+  font-size: 1.1rem;
+  animation: reverse-opacity 1.8s 3.5s;
+  &__success {
+    background-color: $color-success;
+  }
+  &__danger {
+    background-color: $color-danger;
+  }
+}

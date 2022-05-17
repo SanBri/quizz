@@ -1,0 +1,16 @@
+.footer {
+  height: 5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  &__signature {
+    font-size: 0.9rem;
+    display: inline;
+    color: $color-primary;
+    font-weight: bold;
+  }
+  &:hover .footer__signature p {
+    animation: shake 0.5s forwards;
+  }
+}
