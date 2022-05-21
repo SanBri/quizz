@@ -18,7 +18,7 @@ const QuestionsTable = ({ series, isResults = true }) => {
       </thead>
       <tbody>
         {series.map((serie) => (
-          <tr key={serie._id} className={serie.classRowColor}>
+          <tr key={serie._id} className={serie.isGoodAnswer}>
             <th>
               {serie.image !== "" ? (
                 <img src={serie.image} alt={serie.category} />
